@@ -122,6 +122,10 @@ a{
 h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
+
+.opacity_50 {
+    opacity: calc(50 / 100)
+}
 .txt_caption, .b2b_navigation ul li .link_primary_neutral, 
 .order-bar .navigation_content li, .order-bar .navigation_btn, 
 .order-bar .navigation_specs, .order-bar .ob-info .price, .order-bar 
@@ -207,7 +211,7 @@ h1,h2,h3,h4,h5,h6{
 
 
 .body-nav-bar{
-    padding:10px 70px 5px 70px ;
+    padding:10px 50px 5px 50px ;
     background-color: #fff;
     position: sticky;
     z-index: 100;
@@ -376,3 +380,68 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 600;
 
 }
+
+.three-D-container{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 20px;
+}
+
+
+.three-D-container h1{
+    color: black;   
+}
+
+.plus-icon-btn{
+    all: unset;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    opacity: 0.9;
+    text-align: center;
+    background-color: black;
+    position: relative;
+}
+
+.plus-icon-btn > span{
+    font-size: 45px;
+    color: white;
+    position: absolute;
+    bottom: -9px;
+    left: 5px;
+}
+
+.muscle-mass-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 93%;
+    height: auto;
+    gap: 10px;
+}
+
+.muscle-mass-grid > :nth-child(1),.muscle-mass-grid > :nth-child(2){
+ 
+}
+
+.limbs{
+    position: absolute;
+    background-color: rgba(255, 255, 255, .4);
+    backdrop-filter: blur(16px);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--space-2);
+}
+
+.ninty-percent{
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.muscle-mass-grid img{
+    border-radius: 15px;
+}
+
+
